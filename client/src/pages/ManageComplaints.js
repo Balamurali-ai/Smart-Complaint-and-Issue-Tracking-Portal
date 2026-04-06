@@ -226,8 +226,8 @@ const ManageComplaints = () => {
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                       {selectedComplaint.images.map((src, i) => (
-                        <a key={i} href={`http://localhost:5000${src}`} target="_blank" rel="noreferrer" className="block relative group overflow-hidden rounded-xl border border-slate-200 aspect-video">
-                          <img src={`http://localhost:5000${src}`} alt={`img-${i}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <a key={i} href={`https://smart-complaint-and-issue-tracking-portal.onrender.com${src}`} target="_blank" rel="noreferrer" className="block relative group overflow-hidden rounded-xl border border-slate-200 aspect-video">
+                          <img src={`https://smart-complaint-and-issue-tracking-portal.onrender.com${src}`} alt={`img-${i}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                           <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <Search className="text-white" size={24} />
                           </div>

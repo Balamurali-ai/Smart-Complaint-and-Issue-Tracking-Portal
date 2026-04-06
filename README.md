@@ -160,7 +160,7 @@ Register with role "student" (default) through the registration page.
 4. Filter by category or status
 5. Click "Update" to change status, assign department, or add resolution
 
-## Environment Variables
+
 
 
 ```

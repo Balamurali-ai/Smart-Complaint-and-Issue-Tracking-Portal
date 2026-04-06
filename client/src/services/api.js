@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://smart-complaint-and-issue-tracking-portal.onrender.com/api';
 
 const API = axios.create({ baseURL: BASE });
 
