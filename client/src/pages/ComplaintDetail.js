@@ -182,13 +182,13 @@ const ComplaintDetail = () => {
                   {complaint.images.map((src, i) => (
                     <a 
                       key={i} 
-                      href={`https://smart-complaint-and-issue-tracking-portal.onrender.com${src}`} 
+                      href={`${process.env.REACT_APP_API_URL}${src}`} 
                       target="_blank" 
                       rel="noreferrer"
                       className="group relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-square block bg-slate-100"
                     >
                       <img
-                        src={`https://smart-complaint-and-issue-tracking-portal.onrender.com${src}`}
+                        src={`${process.env.REACT_APP_API_URL}${src}`}
                         alt={`Evidence ${i + 1}`}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />

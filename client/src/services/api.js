@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = 'https://smart-complaint-and-issue-tracking-portal.onrender.com/api';
+const BASE = process.env.REACT_APP_API_URL + '/api';
 
 const API = axios.create({ baseURL: BASE });
 
@@ -21,7 +21,7 @@ export const login    = (data) => API.post('/auth/login', data);
 // fetch() lets the browser set Content-Type + boundary automatically.
 export const createComplaint = (formData) => {
   const user = JSON.parse(localStorage.getItem('user'));
-  return fetch(`${BASE}/complaints`, {
+  return fetch(`${process.env.REACT_APP_API_URL}/api/complaints`, {
     method: 'POST',
     headers: {
       Authorization: user?.token ? `Bearer ${user.token}` : '',
